@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Retro Zone | Обратная связь</title>
+	<link rel="stylesheet" href="../css/reset.css">
+	<link rel="stylesheet" href="../css/styles.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	</head>
+	<body>
+		<header class="header">
+			<div class="container header__row">
+				<div class="logo">
+					<a href="index.html">RETRO GAME ZONE</a>
+				</div>
+				<nav class="menu">
+					<ul class="menu__list">
+						<li> <a href="index.html" class="menu__link">Главная</a></li>
+						<li> <a href="about.html" class="menu__link">Консоли</a></li>
+						<li> <a href="contact.html" class="menu__link">Поддержка</a></li>
+					</ul>
+				</nav>
+				<button id="theme-toggle" class="theme-toggle" aria-label="Сменить тему">
+					<span class="theme-toggle__icon"></span>
+				</button>
+			</div>
+		</header>
+
+<div id="page-content">
+	<main class="main-content">
+		<section class="contact-section container">
+			<h1 class="page-title">Центр восстановления (Support)</h1>
+			<p class="page-subtitle">Проблемы с прошивкой или установкой софта? Опишите ситуацию ниже.</p>
+			<form action="#" class="contact-form">
+
+				<fieldset class="form-block">
+					<legend>Автор заявки</legend>
+					<div class="form-group">
+						<label for="user-nick">Ваш никнейм:</label>
+						<input type="text" id="user-nick" name="nickname" placeholder="Никнейм на форуме" required>
+					</div>
+						<div class="form-group">
+							<label for="user-email">Электронная почта:</label>
+							<input type="email" id="user-email" name="email" placeholder="example@mail.com" required>
+						</div>
+				</fieldset>
+
+				<fieldset class="form-block">
+					<legend>Технические данные</legend>
+					<div class="form-group">
+						<label for="device-model">Модель устройства</label>
+						<select name="device" id="device-model">
+								<option value="rg40xx">Anbernic RG40XX H</option>
+								<option value="tsp">Trimui Smart Pro</option>
+								<option value="mmp">Miyoo Mini Plus</option>
+								<option value="airx">Mangami Air X</option>
+								<option value="other">Другое устройство</option>
+							</select>
+					</div>
+
+				<div class="form-group">
+					<label for="firmware-ver">Версия прошивки (OS):</label>
+					<input type="text" id="firmware-ver" name="os_version" placeholder="MuOs/Batocera/Stock/Другое">
+				</div>
+			</fieldset>
+
+			<fieldset class="form-block">
+				<legend>Описание проблемы</legend>
+				<div class="form-group">
+					<label for="issue-desc">В чём заключается неисправность?</label>
+					<textarea id="issue-desc" name="problem" rows="6" placeholder="После каких действий возникла ошибка? (Черный экран, не видит SD-карту и т.д.)" required></textarea>
+				</div>
+			</fieldset>
+
+				<button type="submit" class="submit-btn">Отправить запрос</button>
+			</form>
+		</section>
+	</main>
+	</div>
+	
+	<footer class="footer">
+		<div class="container">
+			<div class="footer__content">
+				<p>© 2026 Designed by <strong>4ekav0meow</strong></p>
+				<div class="footer__social">
+					<a href="https://github.com/4ekav0meow" target="blank" class="github-link">Мой GitHub</a>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<script src="../js/theme.js"></script>
+	<script src="../js/transitions.js"></script>
+	</body>
+</html>
